@@ -1,0 +1,151 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+img#imagem-inicial {
+    padding: 15px 20px 40px 0px;
+}
+
+p#texto-inicio {
+    font-size : 22px;
+    text-align : justify;
+    margin-left : 0px;
+    margin-right : 85px;
+    margin-top : 15px;
+}
+
+h3#sub-texto {
+    font-size : 30px;
+}
+
+h1#titulo-inicio {
+    padding-top : 15px;
+}
+
+input[type="password"] {
+  display: block;
+  width : 400px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+#div-total {
+        display : table;
+}
+
+#div-esquerda {
+    margin-top : 30px;
+    width : 250px;
+    float : left;
+    /*margin-right : 800px;*/
+}
+
+#div-direita {
+    margin-top : 30px;
+    margin-left : 300px;
+    width : 800px;
+}
+
+#div-interna {
+    margin : 0px, 10px, 0px, 60px;
+}
+
+#form1-control {
+    margin-top : 10px;
+    resize : none;
+    width : 600px;
+    height : 150px;
+}
+
+#text-pub {
+    padding-left : 2px;
+    font-size : 18px;
+}
+
+#div-btn{
+    margin-left : 524px;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+#btn {
+    margin-right : 15px;
+}
+
+#body {
+    background-color : aqua;
+    width : 500px;
+}
+
+#timeline {
+    text-align : center;
+    margin-top : 20px;  
+    margin-bottom : 40px;
+}
+
+#first-cab-post {
+    margin : 10px 10px 5px 10px;
+    font-weight : bolder;
+    font-size : 20px;
+}
+
+#body-post {
+    margin : 20px 10px 15px 10px;
+    font-size : 20px;
+}
+
+#pe-post {
+    margin : -10px 10px 10px 10px;
+}
+
+#post {
+    border : 1px solid;
+
+}
+
+#post-individual {
+    border : 1px solid;
+    border-radius: 4px;
+    margin : 10px 200px 10px 230px;
+}
+
+#um-nome-div {
+    width : 145px;
+    text-align : center;
+}
+
+#icon-post {
+    margin : -25px -50px 10px 710px;
+}
+
+.button-post {
+    background: url(../Content/Images/garbage.png) no-repeat top left;
+     display: block;
+     width : 25px;
+     text-indent: -9999px;
+}

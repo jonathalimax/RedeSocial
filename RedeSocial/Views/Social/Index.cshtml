@@ -1,0 +1,52 @@
+﻿@model RedeSocial.Models.myModels
+
+@{
+    ViewBag.Title = "Index";
+    var nome = Session["Nome"].ToString().Split(' ');
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+@using (Html.BeginForm())
+{
+    <body>
+    <div id="div-total">
+        <div id="div-esquerda">
+            <img src="~/Content/Images/avatar2.png" width="150" height="150" />
+            <div id="nome-centro">
+                    @if (nome.Length < 2)
+                    {
+                        <div id="um-nome-div"><h3 id="one-name">@nome[0]</h3></div>
+                    }
+                    else
+                    {
+                        <h3 id="two-name">@nome[0] @nome[1]</h3>
+                    }
+            </div>
+        </div>
+        <div id="div-direita">
+            <div id="text-pub">@Html.Label("Publicação")</div>
+            <div>
+                @Html.TextAreaFor(model => model.publicacao.Publicacao1, htmlAttributes: new { @class = "form-control", @id = "form1-control" })
+            </div>
+            <div id="div-btn">
+                <input type="submit" value="Publicar" class="btn btn-default" />
+            </div>
+        </div>
+        <h2 id="timeline">TimeLine</h2>
+        <div class="row">
+            @foreach(var item in ViewBag.List)
+            { 
+                <div class="col-sm-8" id="post-individual">
+                    <div id="first-cab-post">@nome[0]</div>
+                    <div id="body-post">@item.Publicacao1</div>
+                    <hr>
+                    <div id="pe-post">
+                        @item.DtPublicacao
+                        <div id="icon-post" ><img width="25" src="~/Content/Images/garbage.png"/></div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+}

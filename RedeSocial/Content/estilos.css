@@ -1,0 +1,46 @@
+﻿#div-total {
+        display : table;
+}
+
+#div-esquerda {
+    margin-top : 30px;
+    width : 250px;
+    float : left;
+    /*margin-right : 800px;*/
+}
+
+#div-direita {
+    margin-top : 30px;
+    margin-left : 300px;
+    width : 800px;
+}
+
+#div-interna {
+    margin : 0px, 10px, 0px, 60px;
+}
+
+#form1-control {
+    margin-top : 10px;
+    resize : none;
+    width : 600px;
+    height : 150px;
+}
+
+#text-pub {
+    padding-left : 2px;
+    font-size : 18px;
+}
+
+#div-btn{
+    margin-left : 437px;
+    margin-top : 20px;
+}
+
+#btn {
+    margin-right : 15px;
+}
+
+#body {
+    background-color : aqua;
+    width : 500px;
+}
